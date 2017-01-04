@@ -1,0 +1,270 @@
+@import 'mixins';
+
+body {
+    background: white;
+}
+
+figure  {
+  background-color: #f7f7f7;
+}
+
+.container {
+  margin: 3.5% 9.028%;
+  margin-top: 0;
+}
+
+.content {
+  max-width: 70%;
+}
+
+.post {
+  color: #757c81;
+}
+.blue-light {
+    color: #91daee !important
+}
+
+.turquoise {
+    color: #02ccba !important
+}
+
+.mb-half {
+    margin-bottom: 0.75rem
+}
+
+.date{
+  text-align: center;
+  color: #697681;
+}
+
+.topic{
+  text-align: center;
+  color: #697681;
+}
+
+.bg-gradient-secondary {
+  background-image:linear-gradient(to bottom left, #02b3e4, #02ccba);
+}
+
+.contain{
+  max-width:73.75rem;
+  margin-left:auto;
+  margin-right:auto;
+  padding-top:3rem;
+  padding-bottom:3rem;
+  padding-left:1.5rem;
+  padding-right:1.5rem;
+}
+.contain::after{
+  clear:both;
+  content:"";
+  display:table
+}
+
+.gray-dark {
+    color: #525c65 !important
+}
+
+.module-pathfinder__card {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 100%;
+    padding: 2.25rem;
+    box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
+    border-radius: 0.25rem
+}
+
+.module-pathfinder__card:last-child {
+    margin-right: 0
+}
+
+module-pathfinder__card--icon {
+    text-align: center;
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 100%
+}
+
+.module-pathfinder__card--icon:last-child {
+    margin-right: 0
+}
+
+.module-pathfinder__card--icon img {
+    height: 3rem
+}
+
+.bg-white {
+    background-color: #fff !important
+}
+
+#main{
+  background-color: #fafbfc;
+}
+
+#header {
+  max-height: 380px;
+}
+
+#topicHighlight {
+  border-bottom: 1px solid #91daee;
+}
+
+@media screen and (min-width: 48rem){
+  .contain{
+    padding-top:6rem;
+    padding-bottom:6rem;
+  }
+}
+@media screen and (min-width: 73.75rem){
+  .contain{padding-left:0;
+    padding-right:0;
+  }
+  .contain.no-padding{
+    padding:0
+  }
+}
+
+
+
+@media screen and (min-width: 30rem) {
+    .module-pathfinder__card {
+        float: left;
+        display: block;
+        margin-right: 1.69492%;
+        width: 66.10169%;
+        margin-left: 16.94915%
+    }
+    .module-pathfinder__card:last-child {
+        margin-right: 0
+    }
+}
+
+@media screen and (min-width: 48rem) {
+    .module-pathfinder__card {
+        float: left;
+        display: block;
+        margin-right: 1.69492%;
+        width: 100%;
+        height: 15rem;
+        margin-left: 0%;
+        padding: 3rem;
+    }
+    .module-pathfinder__card:last-child {
+        margin-right: 0
+    }
+}
+
+@media screen and (min-width: 62rem) {
+    .module-pathfinder__card {
+        float: left;
+        display: block;
+        margin-right: 1.69492%;
+        width: 83.05085%;
+        margin-left: 8.47458%;
+        padding: 3.75rem
+    }
+    .module-pathfinder__card:last-child {
+        margin-right: 0
+    }
+}
+
+@media screen and (min-width: 48rem) {
+    .module-pathfinder__card--icon img {
+        height: 4.5rem
+    }
+}
+
+@media screen and (min-width: 48rem) {
+    .module-pathfinder__card--icon {
+        text-align: left;
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        float: left;
+        display: block;
+        margin-right: 2.04082%;
+        width: 8.16327%
+    }
+    .module-pathfinder__card--icon:last-child {
+        margin-right: 0
+    }
+}
+
+@media screen and (max-width: 832px) {
+  .content {
+    max-width: 100%;
+  }
+}
+
+.card {
+  position: relative;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #fff;
+  transition: box-shadow .25s;
+  border-radius: 2px;
+  box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
+
+}
+
+.card:hover {
+  box-shadow: 0 2px 4px 0 rgba(46, 61, 73, 0.12);
+}
+
+.btn {
+  box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15) !important;
+}
+
+.btn:hover {
+  box-shadow: 0 2px 4px 0 rgba(46, 61, 73, 0.12) !important;
+}
+.card .card-content .card-title {
+  font-size: 24px !important;
+  font-weight: 300;
+}
+
+.card .card-content {
+  padding: 20px;
+  border-radius: 0 0 2px 2px;
+}
+
+.card .card-content p {
+  margin: 0;
+  color: inherit;
+}
+
+.card .card-content .card-title {
+  line-height: 48px;
+}
+
+.card .card-action {
+  position: relative;
+  background-color: inherit;
+  border-top: 1px solid rgba(160, 160, 160, 0.2);
+  padding: 20px;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
+  color: #ffab40;
+  margin-right: 20px;
+  transition: color .3s ease;
+  text-transform: uppercase;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating):hover {
+  color: #ffd8a6;
+}
+
+.card .inner-container {
+  margin-left: 30%;
+
+}
+
+.card .post-image {
+  margin-right: 70%;
+}
