@@ -1,9 +1,5 @@
 ---
 layout: default
-custom_css:
-- assets/stylesheets/blog
-custom_js:
-- assets/javascripts/app
 ---
 <!-- Post Section-->
 <div id="home">
@@ -23,7 +19,7 @@ custom_js:
                     </div>
                     <div class="card-action">
                         <!-- <div class="blog-btn"> -->
-                        <a class="btn btn-size" id="readMore" href="{{ post.url }}">Read More</a>
+                        <a class="btn btn-size" id="readMore" href="{{ site.baseurl }}{{ post.url }}">Read More</a>
                         <!-- </div> -->
                     </div>
                 </div>
