@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,18 +11,20 @@
 
 
 <!-- Compiled and minified CSS -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+<link rel="stylesheet" href="blog.css"
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
 
- <!-- Compiled and minified JavaScript -->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 
 </head>
 <body>
   <header>
     <nav class="blue darken-1">
         <div class="nav-wrapper">
-            <a href="#!" class="brand-logo">Grim's BLog</a>
+            <a href="#!" class="brand-logo">Grim's Blog</a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="">About</a></li>
@@ -35,6 +38,36 @@
     </nav>
 </header>
 
+  <div class="container">
+    <!-- Post Section-->
+<div id="home">
+    <h1 class="thin">Blog Posts</h1>
+    <ul class="posts" style="list-style:none;padding-left:0;">
+        
+        <li>
+            <div class="card">
+                <div class="post-image">
+                  <!-- for image links -->
+                </div>
+
+                <div class="inner-container">
+                    <div class="card-content">
+                        <span class="card-title">Welcome to Jekyll!01 Jan 2017</span>
+                        <p>You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated. To add new posts, simply add...</p>
+                    </div>
+                    <div class="card-action">
+                        <!-- <div class="blog-btn"> -->
+                        <a class="btn btn-size" id="readMore" href="/jekyll/update/2017/01/01/welcome-to-jekyll.html">Read More</a>
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+  </div>
   <footer class="page-footer blue darken-1">
     <div class="container">
         <div class="row">
@@ -49,10 +82,10 @@
     <div class="footer-copyright">
         <div class="container">
             © 2017 All rights reserved.
-            <span class="grey-text text-lighten-4 right">Powered by <a class="white-text text-lighten-4 right" href="http://jekyllrb.com/"> Jekyll</a></span>
+            <span class="grey-text text-lighten-4 right">Powered by <a class="white-text text-lighten-4 right" style="font-weight:500;" href="http://jekyllrb.com/"> Jekyll</a></span>
         </div>
     </div>
 </footer>
-  
+
 </body>
 </html>

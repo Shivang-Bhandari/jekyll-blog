@@ -5,3 +5,30 @@ custom_css:
 custom_js:
 - assets/javascripts/app
 ---
+<!-- Post Section-->
+<div id="home">
+    <h1 class="thin">Blog Posts</h1>
+    <ul class="posts" style="list-style:none;padding-left:0;">
+        {% for post in site.posts %}
+        <li>
+            <div class="card">
+                <div class="post-image">
+                  <!-- for image links -->
+                </div>
+
+                <div class="inner-container">
+                    <div class="card-content">
+                        <span class="card-title">{{ post.title }}{{ post.date | date_to_string }}</span>
+                        <p>{{ post.content | strip_html | truncatewords:60 }}</p>
+                    </div>
+                    <div class="card-action">
+                        <!-- <div class="blog-btn"> -->
+                        <a class="btn btn-size" id="readMore" href="{{ post.url }}">Read More</a>
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
