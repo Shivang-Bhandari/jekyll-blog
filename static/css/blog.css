@@ -14,7 +14,7 @@ figure  {
 }
 
 .container {
-  margin: 3.5% 9.028%;
+  margin: 3.5% 14.5%;
   margin-top: 0;
 }
 
@@ -84,7 +84,7 @@ figure  {
     margin-right: 0
 }
 
-module-pathfinder__card--icon {
+.module-pathfinder__card--icon {
     text-align: center;
     float: left;
     display: block;
@@ -116,9 +116,13 @@ module-pathfinder__card--icon {
   border-bottom: 1px solid #91daee;
 }
 
+#postHero {
+  max-height: 235px;
+}
+
 @media screen and (min-width: 48rem){
   .contain{
-    padding-top:6rem;
+    padding-top:0.75rem;
     padding-bottom:6rem;
   }
 }
@@ -152,7 +156,7 @@ module-pathfinder__card--icon {
         display: block;
         margin-right: 1.69492%;
         width: 100%;
-        height: 15rem;
+        height: 15.5rem;
         margin-left: 0%;
         padding: 3rem;
     }
@@ -165,9 +169,10 @@ module-pathfinder__card--icon {
     .module-pathfinder__card {
         float: left;
         display: block;
-        margin-right: 1.69492%;
-        width: 83.05085%;
-        margin-left: 8.47458%;
+        margin-right: 4%;
+        width: 100%;
+        margin-left: 1.25%;
+        margin-bottom: 6%;
         padding: 3.75rem
     }
     .module-pathfinder__card:last-child {

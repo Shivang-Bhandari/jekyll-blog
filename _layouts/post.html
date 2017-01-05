@@ -1,3 +1,22 @@
 ---
 layout: default
 ---
+<div id="main">
+  <section class="bg-gradient-secondary" id="postHero">
+    <div class="contain">
+      <div class="module-pathfinder__card bg-white">
+        <h3 class="topic mb-half turquoise"><a id="topicHighlight">{{ page.title }}</a></h1>
+        <h5 class="date mb-half">{{ page.date | date_to_string }}</h3>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+     <section class="content">
+       <h2 class="gray-dark">Post</h2>
+       <div class="post">
+         {{ content }}
+       </div>
+     </section>
+
+  </div>
+</div>
