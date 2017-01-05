@@ -5,6 +5,9 @@ body {
     background: white;
   }
 
+footer {
+  padding: 0 !important;
+}
 main {
     flex: 1 0 auto;
   }
@@ -13,6 +16,11 @@ figure  {
   background-color: #f7f7f7;
 }
 
+a:hover {
+  color: #02ccba;
+  transition: color 0.5s ease;
+
+}
 .container {
   margin: 3.5% 14.5%;
   margin-top: 0;
