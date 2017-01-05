@@ -104,6 +104,10 @@ figure  {
     background-color: #fff !important
 }
 
+.pagination li.active {
+  background-color: #00bfa5; 
+}
+
 #main{
   background-color: #fafbfc;
 }
