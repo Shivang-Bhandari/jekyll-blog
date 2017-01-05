@@ -1,16 +1,16 @@
 ---
 layout: default
-permalink : /blog/
+<!-- permalink : /blog/ -->
 ---
 <!-- Post Section-->
 <div id="home">
     <h1 class="thin">Blog Posts</h1>
     <ul class="posts" style="list-style:none;padding-left:0;">
-        {% for post in site.posts %}
+        {% for post in paginator.posts %}
         <li>
             <div class="card">
                 <div class="post-image">
-                  <!-- for image links -->
+                    <!-- for image links -->
                 </div>
 
                 <div class="inner-container">
@@ -28,4 +28,27 @@ permalink : /blog/
         </li>
         {% endfor %}
     </ul>
+    {% if paginator.total_pages > 1 %}
+    <div class="pagination">
+        {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+        {% else %}
+        <span>&laquo; Prev</span>
+        {% endif %}
+        {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+        <em>{{ page }}</em>
+        {% elsif page == 1 %}
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+        {% else %}
+        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+        {% endif %} {% endfor %}
+        {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+        {% else %}
+        <span>Next &raquo;</span>
+        {% endif %}
+    </div>
+    {% endif %}
+
 </div>
