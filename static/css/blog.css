@@ -1,6 +1,13 @@
 body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
     background: white;
-}
+  }
+
+main {
+    flex: 1 0 auto;
+  }
 
 figure  {
   background-color: #f7f7f7;

@@ -12,37 +12,45 @@
     <meta property="twitter:title" content="Welcome to Jekyll!" />
 
 
-<!-- Compiled and minified CSS -->
-<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-<link rel="stylesheet" href="blog.css" />
-
-<!-- Compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<link rel="stylesheet" href="/static/css/blog.css" />
 
 </head>
 <body>
   <header>
     <nav class="blue darken-1">
         <div class="nav-wrapper">
-            <a href="#!" class="brand-logo">Grim's Blog</a>
+            <a href="/blog" class="brand-logo">Grim's Blog</a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="">About</a></li>
+            <ul class="right hide-on-med-and-down">\
+                <li><a href="/about">About</a></li>
                 <li><a href="https://www.github.com/Shivang-Bhandari">My Code</a></li>
             </ul>
             <ul class="side-nav" id="mobile-demo">
-                <li><a href="sass.html">About</a></li>
+                <li><a href="/blog">Home</a></li>
+                <li><a href="/about">About</a></li>
                 <li><a href="https://www.github.com/Shivang-Bhandari">My Code</a></li>
             </ul>
         </div>
     </nav>
 </header>
 
-  <div class="container">
-    
-  </div>
+  <main>
+    <div class="container">
+      
+    </div>
+  </main>
+  <!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $(".button-collapse").sideNav();
+  })
+</script>
+
   <footer class="page-footer blue darken-1">
     <div class="container">
         <div class="row">
