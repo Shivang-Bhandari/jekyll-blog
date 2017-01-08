@@ -13,14 +13,6 @@ gulp.task('jekyll', function(done) {
   }).on('close', done);
 });
 
-// gulp.task('jekyllServe', function(){
-//   browserSync.notify('Compiling Jekyll');
-//   var jekyll_command = ['exec', 'jekyll', 'serve', '--watch'];
-//   return cp.spawn('bundle', jekyll_command, {
-//     stdio: 'inherit'
-//   }).on('close', done);
-// });
-
 
 gulp.task('serve', function() {
   browserSync.init({
