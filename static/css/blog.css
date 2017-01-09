@@ -57,6 +57,7 @@ a:hover {
 
 .contain{
   max-width:73.75rem;
+  margin-top: 4%; 
   margin-left:auto;
   margin-right:auto;
   padding-top:3rem;
