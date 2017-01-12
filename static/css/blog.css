@@ -29,6 +29,19 @@ a:hover {
 .post {
   color: #757c81;
 }
+
+.post-header {
+  margin-top: 2%;
+}
+
+.post-content {
+  font-size: 17px;
+}
+
+#aboutHero {
+  max-height: 200px;
+}
+
 .blue-light {
     color: #91daee !important
 }
