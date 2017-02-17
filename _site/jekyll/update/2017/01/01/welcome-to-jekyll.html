@@ -21,12 +21,76 @@
 <link rel="stylesheet" href="/static/css/blog.css" />
 
 </head>
-<body>
+<body style="background-color:#fff;">
   <header>
-    <nav class="light-blue darker-1">
+  <header style="padding-left:0px;">
+      <div class="navbar-fixed">
+        <nav class="top-nav navBlue">
+            <div class="container" style="margin-top:0;margin-bottom:0;">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">Grim's Blog</a>
+                </div>
+                <a href="#" data-activates="nav-mobile" class="button-collapse nav-top full">
+                    <i class="material-icons">menu</i>
+                </a>
+            </div>
+        </nav>
+      </div>
+      <div class="fixed-action-btn toolbar">
+          <a class="btn-floating btn-large teal lighten-2">
+              <i class="large fa fa-telegram"></i>
+          </a>
+          <ul class="sideNavPanel">
+              <li class="waves-effect waves-light"><a href="mailto:pump382156@gmail.com"><i class="fa fa-google"></i></a></li>
+              <li class="waves-effect waves-light"><a href="https://www.facebook.com/TheGrim038"><i class="fa fa-facebook"></i></a></li>
+              <li class="waves-effect waves-light"><a href="https://in.linkedin.com/in/shivangbhandari"><i class="fa fa-linkedin"></i></a></li>
+              <li class="waves-effect waves-light"><a href="https://twitter.com/shivang382156"><i class="fa fa-twitter"></i></a></li>
+          </ul>
+      </div>
+      <ul id="slide-out" class="side-nav fixed hide-on-med-and-down" style="transform: translateX(0%);margin-top:48px;">
+          <li>
+              <div class="userView">
+                  <div class="background" style="left:-230px;">
+                      <img src="/static/bg.jpg">
+                  </div>
+                  <a href="#!user"><img class="circle" src="https://avatars2.githubusercontent.com/u/16368588?v=3&u=6bba4c55145f7c13e2d32409fef1987d150a348e&s=400https://avatars2.githubusercontent.com/u/16368588?v=3&u=6bba4c55145f7c13e2d32409fef1987d150a348e&s=400"></a>
+                  <a href="#!name"><span class="white-text name">Shivang Bhadnari</span></a>
+                  <a href="mailto:pump382156@gmail.com"><span class="white-text email">pump382156@gmail.com</span></a>
+              </div>
+          </li>
+          <li><a class="waves-effect" href="" class="center">Home</a></li>
+          <div class="divider"></div>
+          <li><a class="waves-effect" href="/about" class="center">About</a></li>
+          <div class="divider"></div>
+          <li>
+              <a class="waves-effect" href="https://github.com/Shivang-Bhandari/" class="center waves-effect waves-light">My Code</a>
+          </li>
+          <div class="divider"></div>
+      </ul>
+      <ul id="nav-mobile" class="side-nav">
+          <li>
+              <div class="userView">
+                  <div class="background">
+                      <img src="/static/bg.jpg">
+                  </div>
+                  <a href="#!user"><img class="circle" src="https://avatars2.githubusercontent.com/u/16368588?v=3&u=6bba4c55145f7c13e2d32409fef1987d150a348e&s=400"></a>
+                  <a href="#!name"><span class="white-text name">Shivang Bhadnari</span></a>
+                  <a href="mailto:pump382156@gmail.com"><span class="white-text email">pump382156@gmail.com</span></a>
+              </div>
+          </li>
+          <li><a class="waves-effect" href="" class="center">Home</a></li>
+          <div class="divider"></div>
+          <li><a class="waves-effect" href="/about" class="center">About</a></li>
+          <div class="divider"></div>
+          <li>
+              <a class="waves-effect" href="https://github.com/Shivang-Bhandari/" class="center waves-effect waves-light">My Code</a>
+          </li>
+          <div class="divider"></div>
+      </ul>
+    <!-- <nav class="light-blue darker-1">
         <div class="nav-wrapper">
             <a href="/" class="waves-effect waves-light brand-logo center">Grim's Blog</a>
-            <a href="#" data-activates="mobile-demo" class="waves-effect waves-light button-collapse"><i class="material-icons">menu</i></a>
+            <a href="#" data-activates="side-nav" class="waves-effect waves-light button-collapse"><i class="material-icons">menu</i></a>
             <div class="fixed-action-btn toolbar">
                 <a class="btn-floating btn-large teal lighten-2">
                     <i class="large fa fa-telegram"></i>
@@ -40,25 +104,76 @@
             </div>
             <ul class="right hide-on-med-and-down">
                 <li><a href="/about" class="waves-effect waves-light">About</a></li>
-                <li><a href="https://www.github.com/Shivang-Bhandari" class="waves-effect waves-light"  style="max-height:65px;"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a></li>
-            </ul>
-            <ul class="side-nav" id="mobile-demo">
-                <li><a href="" class="center">Home</a></li>
+                <li><a href="https://www.github.com/Shivang-Bhandari" class="waves-effect waves-light" style="max-height:65px;"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a></li>
+            </ul> -->
+            <!-- <ul class="mobile-demo" id="mobile-demo">
+                <li>
+                    <div class="userView">
+                        <div class="background">
+                            <img src="assets/images/office.jpg">
+                        </div>
+                        <a href="#!user"><img class="circle" src="assets/images/yuna.jpg"></a>
+                        <a href="#!name"><span class="white-text name">John Doe</span></a>
+                        <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                    </div>
+                </li>
+                <li><a class="waves-effect" href="" class="center">Home</a></li>
                 <div class="divider"></div>
-                <li><a href="/about" class="center">About</a></li>
+                <li><a class="waves-effect" href="/about" class="center">About</a></li>
                 <div class="divider"></div>
                 <li>
-                    <a href="https://github.com/Shivang-Bhandari/" class="center waves-effect waves-light">My Code</a>
+                    <a class="waves-effect" href="https://github.com/Shivang-Bhandari/" class="center waves-effect waves-light">My Code</a>
                 </li>
                 <div class="divider"></div>
-            </ul>
+            </ul> -->
+            <!-- <ul id="side-nav" class="side-nav fixed hide-on-med-and-down" style="transform: translateX(0%);margin-top:48px;">
+                <li>
+                    <div class="userView">
+                        <div class="background">
+                            <img src="assets/images/office.jpg">
+                        </div>
+                        <a href="#!user"><img class="circle" src="assets/images/yuna.jpg"></a>
+                        <a href="#!name"><span class="white-text name">John Doe</span></a>
+                        <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                    </div>
+                </li>
+
+                <li><a class="waves-effect" href="" class="center">Home</a></li>
+                <div class="divider"></div>
+                <li><a class="waves-effect" href="/about" class="center">About</a></li>
+                <div class="divider"></div>
+                <li>
+                    <a class="waves-effect" href="https://github.com/Shivang-Bhandari/" class="center waves-effect waves-light">My Code</a>
+                </li>
+                <div class="divider"></div>
+            </ul> -->
+            <!-- <ul id="nav-mobile" class="side-nav">
+                <li>
+                    <div class="userView">
+                        <div class="background">
+                            <img src="assets/images/office.jpg">
+                        </div>
+                        <a href="#!user"><img class="circle" src="assets/images/yuna.jpg"></a>
+                        <a href="#!name"><span class="white-text name">John Doe</span></a>
+                        <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                    </div>
+                </li>
+                <li><a class="waves-effect" href="" class="center">Home</a></li>
+                <div class="divider"></div>
+                <li><a class="waves-effect" href="/about" class="center">About</a></li>
+                <div class="divider"></div>
+                <li>
+                    <a class="waves-effect" href="https://github.com/Shivang-Bhandari/" class="center waves-effect waves-light">My Code</a>
+                </li>
+                <div class="divider"></div>
+            </ul> -->
         </div>
     </nav>
 </header>
 
   <main>
     <div class="container">
-      <div id="main">
+      <div id="main" class="sideNavPanel">
   <section class="bg-gradient-secondary" id="postHero">
     <div class="contain">
       <div class="module-pathfinder__card bg-white">
@@ -69,7 +184,7 @@
 
   </section>
 
-  <div class="container" id="post">
+  <div id="post">
      <section>
        <h2 class="gray-dark center thin">Post</h2>
        <div class="divider"></div>
@@ -89,7 +204,7 @@
 <p>Check out the <a href="http://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
 
 
-       </div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58a69021fbc7de4e"></script>        </div>
      </section>
 
   </div>
@@ -105,15 +220,6 @@
     $(".button-collapse").sideNav();
   })
 </script>
-
-  <footer class="page-footer blue darken-1">
-    <div class="footer-copyright">
-        <div class="container">
-            © 2017 All rights reserved.
-            <span class="grey-text text-lighten-4 right">Powered by --><a class="white-text text-lighten-4 right" style="font-weight:500;" href="http://jekyllrb.com/"> Jekyll</a></span>
-        </div>
-    </div>
-</footer>
 
 </body>
 </html>

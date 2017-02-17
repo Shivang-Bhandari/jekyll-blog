@@ -15,6 +15,30 @@ main {
 figure  {
   background-color: #f7f7f7;
 }
+.wrap {
+  /*display: flex;*/
+  flex-wrap: wrap;
+}
+nav {
+    height: 48px;
+}
+.sideNavPanel {
+    padding-left: 300px !important;
+}
+.brand-logo {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 48px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+@media only screen and (max-width: 992px) {
+    .sideNavPanel {
+        padding-left: 0;
+    }
+}
 
 a:hover {
   color: #bbdefb;
@@ -83,6 +107,19 @@ a:hover {
   content:"";
   display:table
 }
+.navBlue {
+    background-color: #02758a;
+}
+.btn-floating.halfway-fab {
+    position: absolute;
+    right: 24px;
+    bottom: 0;
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+}
+
+
+
 
 .gray-dark {
     color: #525c65 !important

@@ -1,22 +1,23 @@
 ---
-layout: default
+layout: home
 <!-- permalink : /blog/ -->
 ---
 <!-- Post Section-->
 <div id="home">
-    <h1 class="thin">Blog Posts</h1>
-    <ul class="posts" style="list-style:none;padding-left:0;">
-        {% for post in paginator.posts %}
-        <li>
-            <div class="card">
-                <div class="post-image hide">
-                    <!-- for image links -->
-                </div>
+    <section class="row wrap">
+      <!-- <ul class="posts" style="list-style:none;padding-left:0;"> -->
+          {% for post in paginator.posts %}
+          <!-- <li> -->
+            <div class="col s12 m4">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img class="responsive-img" src="//www.gstatic.com/mobilesdk/160505_mobilesdk/discoverycards/2x/analytics.png">
+                        <a class="btn-floating halfway-fab waves-effect waves-light btn-large red"><i class="material-icons">add</i></a>
 
-                <div class="inner-container">
+                        </div>
                     <div class="card-content">
                         <span class="card-title">{{ post.title }}{{ post.date | date_to_string }}</span>
-                        <p>{{ post.content | strip_html | truncatewords:60 }}</p>
+                        <p>{{ post.content | strip_html | truncatewords:20 }}</p>
                     </div>
                     <div class="card-action">
                         <!-- <div class="blog-btn"> -->
@@ -25,9 +26,13 @@ layout: default
                     </div>
                 </div>
             </div>
-        </li>
-        {% endfor %}
-    </ul>
+
+          <!-- </li> -->
+          {% endfor %}
+      <!-- </ul> -->
+    </section>
+
+
     {% if paginator.total_pages > 1 %}
     <div class="pagination center">
       <ul class="pagination ">
