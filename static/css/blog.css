@@ -36,7 +36,7 @@ nav {
 }
 @media only screen and (max-width: 992px) {
     .sideNavPanel {
-        padding-left: 0;
+        padding-left: 0 !important;
     }
 }
 
